@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105;
+  }
+  
+  .btn-emergency {
+    @apply bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 animate-pulse;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 transform hover:-translate-y-3 hover:scale-105;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-indigo-600 via-purple-700 to-pink-600;
+  }
+  
+  .feature-card {
+    @apply bg-white/15 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:bg-white/25 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105;
+  }
+  
+  .icon-bounce {
+    @apply transition-transform duration-300 hover:scale-125 hover:rotate-12;
+  }
+  
+  .step-number {
+    @apply transition-all duration-300 hover:scale-110 hover:rotate-6;
+  }
+}
