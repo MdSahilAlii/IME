@@ -26,7 +26,11 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-indigo-600 via-purple-700 to-pink-600;
+    @apply bg-blue-50;
+  }
+  
+  .footer-bg {
+    @apply bg-gradient-to-br from-slate-800 via-gray-900 to-black;
   }
   
   .feature-card {

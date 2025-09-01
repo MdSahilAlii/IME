@@ -6,24 +6,24 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
-              <div className="bg-indigo-600 p-3 rounded-xl animate-float">
-                <Plane className="h-6 w-6 text-white" />
+      <header className="bg-gradient-to-r from-white via-blue-50 to-white shadow-xl border-b border-blue-100 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center space-x-4 group">
+              <div className="bg-gradient-to-br from-indigo-600 to-purple-600 p-3 rounded-xl shadow-lg transform group-hover:scale-105 transition-all duration-300">
+                <Plane className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">AirMed Emergency</h1>
-                <p className="text-sm text-gray-600">Critical Care Transport Services</p>
+                <h1 className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">AirMed Emergency</h1>
+                <p className="text-sm font-medium text-gray-600">Critical Care Transport Services</p>
               </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center text-indigo-600 hover:text-indigo-700 transition-colors duration-200">
-                <Phone className="h-4 w-4 mr-2" />
-                <span className="font-semibold">1-800-AIRMED</span>
+            <div className="flex items-center space-x-5">
+              <div className="flex items-center bg-gradient-to-r from-indigo-50 to-purple-50 px-5 py-3 rounded-full border border-indigo-200 hover:border-indigo-300 transition-all duration-200 group">
+                <Phone className="h-5 w-5 mr-2 text-indigo-600 group-hover:animate-bounce" />
+                <span className="font-semibold text-indigo-700">1-800-AIRMED</span>
               </div>
-              <button className="btn-emergency">
+              <button className="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white px-5 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                 Emergency Request
               </button>
             </div>
@@ -32,7 +32,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="gradient-bg text-white py-20">
+      <section className="gradient-bg text-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-6xl font-black mb-8 animate-fade-in">
             Emergency Air Medical Transport
@@ -46,17 +46,17 @@ export default function Home() {
             <div className="feature-card group">
               <Heart className="h-16 w-16 text-red-400 mx-auto mb-6 icon-bounce" />
               <h3 className="text-2xl font-bold mb-4">24/7 Emergency Response</h3>
-              <p className="text-white/90 text-lg">Immediate medical evacuation services available around the clock</p>
+              <p className="text-gray-700 text-lg">Immediate medical evacuation services available around the clock</p>
             </div>
             <div className="feature-card group">
               <Users className="h-16 w-16 text-emerald-400 mx-auto mb-6 icon-bounce" />
               <h3 className="text-2xl font-bold mb-4">Expert Medical Crew</h3>
-              <p className="text-white/90 text-lg">Board-certified physicians and critical care nurses on every flight</p>
+              <p className="text-gray-700 text-lg">Board-certified physicians and critical care nurses on every flight</p>
             </div>
             <div className="feature-card group">
               <Globe className="h-16 w-16 text-cyan-400 mx-auto mb-6 icon-bounce" />
               <h3 className="text-2xl font-bold mb-4">Global Coverage</h3>
-              <p className="text-white/90 text-lg">International medical repatriation and domestic emergency transport</p>
+              <p className="text-gray-700 text-lg">International medical repatriation and domestic emergency transport</p>
             </div>
           </div>
           
@@ -117,7 +117,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 group">
-                  <div className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+                  <div className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold step-number">1</div>
                   <div>
                     <h4 className="font-semibold text-blue-700">Schedule Consultation</h4>
                     <p className="text-gray-600">Contact our planning team</p>
@@ -306,7 +306,7 @@ export default function Home() {
       </section>
 
       {/* Footer CTA */}
-      <section className="gradient-bg text-white py-16">
+      <section className="footer-bg text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-4">Ready When You Need Us</h2>
           <p className="text-xl mb-8">Our emergency response team is standing by 24/7 to provide critical care transport</p>
